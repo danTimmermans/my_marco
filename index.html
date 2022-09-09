@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/menuToggle.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+<body>
+    <header id="mainHeader">
+        <a href="index.html">MARCO MARINO</a>
+        <nav id="mainNav" >
+            <div class="mainNavBar">
+                <a href="projects.html">+Projects</a>
+                <a href="about.html">About</a>
+                <a href="#" class="link">Contact</a>
+            </div>
+        </nav>
+        <div id="menuToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div id="mainContent" class="home">
+        <div class="contact">
+            <div class="hello">
+                <h2>Hello! Let's work together</h2>
+                <div class="cross"></div>
+            </div>
+            <div class="form">
+                <form action="/my-page" method="post">
+                    <div class="name">
+                        <input type="text" id="firstname" name="user_firstname" placeholder="First name">
+                        <input type="text" id="secondname" name="user_secondname" placeholder="Second name">
+                    </div>
+                    <div class="mail">
+                        <input type="email" id="mail" name="user_mail" placeholder="Email adress">
+                    </div>
+                    <div>
+                        <textarea id="msg" name="user_message" placeholder="Project description" rows="15"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="submit">
+                <div class="button">
+                    <button type="submit">send request</button>
+                </div>            
+                <a href="#">Download resume</a>
+            </div>
+        </div>
+        <div class="mainTitle">
+            <h1>Less is more <br>work —</h1>
+            <h2>HI, I'M MARCO FRONT-END DEV BASED IN E4°21'6.109N50°50'47.606"</h2>
+            <a href="projects.html">—Explore Projects</a>
+        </div>
+    </div>
+    <footer id="mainFooter" class="footerFixed">
+        <div class="socialMediaNav">
+            <a href="https://dribbble.com/marcomarino">Dribbble</a>
+            <a href="https://www.instagram.com/marcomarino.design/">instagram</a>
+            <a href="https://www.linkedin.com/in/marcomarinodesign/">Linkedin</a>
+            <a href="https://curiou5.tumblr.com/">Tumblr</a>
+        </div>
+    </footer>
+</body>
+</html>

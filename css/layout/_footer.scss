@@ -1,0 +1,17 @@
+#mainFooter{
+    height: 10vh;
+    padding : 0 1em 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footerFixed{
+        @include fixed(bottom);
+    }
+    .socialMediaNav{
+        display: flex;
+        align-items: center;
+        a{
+            @include padding("right");
+        }
+    }
+}

@@ -20,21 +20,21 @@
         }
     }
     #mainNav{
-            .mainNavBar{
-                position: absolute;
-                top: $headerHeight;
-                left: 0;
-                width: 100%;
-                display: none;
-                background-color: color('dark');
-                a{
-                    padding: space();
-                    border-bottom: 1px solid white;
-                    &:hover {
-                        text-decoration: line-through;
-                    }
+        .mainNavBar{
+            position: absolute;
+            top: $headerHeight;
+            left: 0;
+            width: 100%;
+            display: none;
+            background-color: color('dark');
+            a{
+                padding: space();
+                border-bottom: 1px solid white;
+                &:hover {
+                    text-decoration: line-through;
                 }
             }
+        }
     }
     
     // responsive
@@ -58,9 +58,12 @@
 
 #mainHeader.headerProject{
     background-color: transparent;
-    #mainNav{
-        .mainNavBar{
-            background-color: transparent;
-        }
+    @include media-breakpoint-up("md"){
+           #mainNav{
+            .mainNavBar{
+                    background-color: transparent;
+                }
+            } 
     }
-}
+
+        }

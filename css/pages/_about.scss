@@ -2,6 +2,7 @@
         background-color: color("dark");
 }
 #mainContent.about{
+    padding-top: 10vh;
     @include center();
     width: 90%;
     .radius img{

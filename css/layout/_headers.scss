@@ -1,5 +1,6 @@
 #mainHeader {
     height: $headerHeight;
+    background-color: color('dark');
     @include display-grid();
     grid-template-columns: 130px 1fr 40px ;
     align-items: center;
@@ -55,3 +56,11 @@
     }
 }
 
+#mainHeader.headerProject{
+    background-color: transparent;
+    #mainNav{
+        .mainNavBar{
+            background-color: transparent;
+        }
+    }
+}

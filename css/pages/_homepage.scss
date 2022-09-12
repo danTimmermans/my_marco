@@ -9,17 +9,28 @@
         flex-direction: column;
         justify-content: space-between;
         h1{
-            font-size: 7em;
+            font-size: 5em;
             line-height: 80px;
         }
         h2{
             font: {
                 style: italic;
-                size: map-get($heading-font-sizes , 3 );
+                size: map-get($heading-font-sizes, 4 );
             }          
         }
         a{
-            @include padding("top", 2em);
+            @include padding("top", 1em);
+        }
+    }
+    // responsive LG and up
+    @include media-breakpoint-up("lg"){
+        .mainTitle{
+            h1{
+                font-size: 7em;
+            }
+            h2{
+                font-size: map-get($heading-font-sizes, 2 );;
+            }
         }
     }
 }
